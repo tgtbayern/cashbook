@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0dde23c-b50a-4c54-935c-df2d709b600e" name="变更" comment="add sevelet">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
-    </list>
+    <list default="true" id="e0dde23c-b50a-4c54-935c-df2d709b600e" name="变更" comment="able to read input from the web" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -176,7 +171,7 @@
       <updated>1670769154609</updated>
       <workItem from="1670769157215" duration="1463000" />
       <workItem from="1670770904219" duration="1733000" />
-      <workItem from="1670842911691" duration="13443000" />
+      <workItem from="1670842911691" duration="14351000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1670770203819</created>
@@ -241,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671022888137</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="able to read input from the web">
+      <created>1671028636817</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671028636817</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +275,7 @@
     <MESSAGE value="try" />
     <MESSAGE value="add jdbc" />
     <MESSAGE value="add sevelet" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sevelet" />
+    <MESSAGE value="able to read input from the web" />
+    <option name="LAST_COMMIT_MESSAGE" value="able to read input from the web" />
   </component>
 </project>
