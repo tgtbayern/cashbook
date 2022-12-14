@@ -13,6 +13,9 @@ public class Servlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String account=request.getParameter("username");
+        String password=request.getParameter("password");
+        System.out.println(account+password);
 
     }
 }

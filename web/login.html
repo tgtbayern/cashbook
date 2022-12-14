@@ -70,18 +70,19 @@
 <body>
   <div class="login-box">
     <h1>系统登录</h1>
-    <div class="textbox">
-     <!--
-     placeholder表示预设值
-     -->
-      <input type="text" placeholder="用户名">
-    </div>
+
     <form action="add" method="post">
+      <div class="textbox">
+        <!--
+        placeholder表示预设值
+        -->
+        <input type="text" placeholder="用户名" name="username">
+      </div>
     <div class="textbox">
-      <input type="password" placeholder="密码">
+      <input type="password" placeholder="密码" name="password">
     </div>
-    <input class="btn" type="button" value="登录">
-    <p>没有账号？<a>点击此处进行注册。</a></p>
+    <input class="btn" type="submit" value="登录" >
+    <p>没有账号？<a>点击此处进行注册</a></p>
     </form>
     </div>
     <script>
