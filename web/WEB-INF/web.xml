@@ -17,6 +17,6 @@
     3 <url-pattern>是<servlet-mapping>下的，找<servlet-mapping>下的<servlet-name>=Sevelet
     4 通过这个Sevelet匹配<servlet>（第6行）中的<servlet-name>，发现匹配上了
     5 找<servlet>（第6行）中的<servlet-class>class名称
-    6 通过这个class名称找到用户发送请求的时候，应该执行的操作所在的类，执行相应操作
+    6  通过这个class名称找到用户发送请求的时候，应该执行的操作所在的类，执行相应操作
     -->
 </web-app>
