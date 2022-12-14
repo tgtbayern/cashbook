@@ -6,9 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0dde23c-b50a-4c54-935c-df2d709b600e" name="变更" comment="try">
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-j-8.0.31.jar" afterDir="false" />
+    <list default="true" id="e0dde23c-b50a-4c54-935c-df2d709b600e" name="变更" comment="add sevelet">
+      <change afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cashbook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cashbook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/86136/IdeaProjects/cashbook/lib/mysql-connector-j-8.0.31.jar",
+    "last_opened_file_path": "C:/Users/86136/IdeaProjects/cashbook/web",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -48,16 +50,23 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\86136\IdeaProjects\cashbook\web" />
       <recent name="C:\Users\86136\IdeaProjects\cashbook\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\86136\IdeaProjects\cashbook\web" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 11.0.0-M1" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.0-M1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/cashbook/login.html" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="cashbook:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/cashbook_war_exploded" />
+            <option name="CONTEXT_PATH" value="/cashbook" />
           </settings>
         </artifact>
       </deployment>
@@ -149,7 +158,8 @@
       <option name="presentableId" value="Default" />
       <updated>1670769154609</updated>
       <workItem from="1670769157215" duration="1463000" />
-      <workItem from="1670770904219" duration="1537000" />
+      <workItem from="1670770904219" duration="1733000" />
+      <workItem from="1670842911691" duration="7898000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1670770203819</created>
@@ -186,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670770914053</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add jdbc">
+      <created>1670774061609</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670774061609</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +222,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="try" />
-    <option name="LAST_COMMIT_MESSAGE" value="try" />
+    <MESSAGE value="add jdbc" />
+    <MESSAGE value="add sevelet" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sevelet" />
   </component>
 </project>
