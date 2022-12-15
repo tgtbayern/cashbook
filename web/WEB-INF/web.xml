@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <servlet>
-        <servlet-name>Sevelet</servlet-name>
-        <servlet-class>Servlet</servlet-class>
+        <servlet-name>Servlet</servlet-name>
+        <servlet-class>controller.Servlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Sevelet</servlet-name>
+        <servlet-name>Servlet</servlet-name>
         <url-pattern>/add</url-pattern>
     </servlet-mapping>
     <!--
@@ -18,5 +18,7 @@
     4 通过这个Sevelet匹配<servlet>（第6行）中的<servlet-name>，发现匹配上了
     5 找<servlet>（第6行）中的<servlet-class>class名称
     6 通过这个class名称找到用户发送请求的时候，应该执行的操作所在的类，执行相应操作
+    7.同一个url可能发送不同的请求，servlet可以读取，进而做出不同的操作
+    8.如果一个页面没有发送请求，那页面默认发送的请求就是页面名字，在这里就叫  /login
     -->
 </web-app>

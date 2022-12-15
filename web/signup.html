@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>系统登录</title>
+  <title>注册</title>
   <style>
     /* 定义页面的样式 */
     body {
@@ -68,37 +68,45 @@
   </style>
 </head>
 <body>
-  <div class="login-box">
-    <h1>系统登录</h1>
+<div class="login-box">
+  <h1>注册</h1>
 
-    <form action="add" method="post">
-      <div class="textbox">
-        <!--
-        placeholder表示预设值
-        -->
-        <input type="text" placeholder="用户名" name="username">
-      </div>
+  <form action="add" method="post">
     <div class="textbox">
-      <input type="password" placeholder="密码" name="password">
+      <!--
+      placeholder表示预设值
+      -->
+      <input type="text" placeholder="用户名" name="username">
     </div>
-    <input class="btn" type="submit" value="登录" >
-    <p>没有账号？<a href="signup.html" >点击此处进行注册</a></p>
-    </form>
+    <div class="textbox">
+      <input type="password" placeholder="密码" name="password1">
     </div>
-    <script>
-      // 定义登录按钮的点击事件
-      document.querySelector('.btn').addEventListener('click', function() {
-        // 获取用户输入的用户名和密码
-        var username = document.querySelector('.textbox input[type="text"]').value;
-        var password = document.querySelector('.textbox input[type="password"]').value;
-        // 进行用户名和密码的验证
-        if (username === '' || password === '') {
-          alert('用户名或密码不能为空！');
-        } else {
-          alert('登录成功！');
-        }
-      });
-    </script>
-  </body>
-  </html>
-  ```
+    <div class="textbox">
+      <input type="password" placeholder="确认密码" name="password2">
+    </div>
+    <input class="btn" type="submit" value="注册" ><br><br>
+
+  </form>
+</div>
+<script>
+  // 定义登录按钮的点击事件
+  document.querySelector('.btn').addEventListener('click', function() {
+    // 获取用户输入的用户名和密码
+    var username = document.querySelector('.textbox input[type="text"]').value;
+    var password1 = document.querySelector('.textbox input[name="password1"]').value;
+    var password2 = document.querySelector('.textbox input[name="password2"]').value;
+
+    // 进行用户名和密码的验证
+    if (username === '' || password1 === '') {
+      alert('用户名或密码不能为空！');
+    }else if(password1!==password2){
+      alert('密码不匹配');
+    }
+    else{
+      alert('注册成功！');
+    }
+  });
+</script>
+</body>
+</html>
+```

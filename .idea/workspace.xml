@@ -6,11 +6,32 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0dde23c-b50a-4c54-935c-df2d709b600e" name="变更" comment="able to read input from the web" />
+    <list default="true" id="e0dde23c-b50a-4c54-935c-df2d709b600e" name="变更" comment="able to read input from the web">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/DB_Connector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/main_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/cashbook_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/cashbook_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cashbook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cashbook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-j-8.0.31.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Servlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,15 +54,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/86136/IdeaProjects/cashbook/web",
+    "last_opened_file_path": "C:/Users/86136/mysql-connector-j-8.0.31JDBC/mysql-connector-j-8.0.31.jar",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.last.edited": "库",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -53,7 +80,20 @@
       <recent name="C:\Users\86136\IdeaProjects\cashbook\web" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat 服务器.Tomcat 11.0.0-M1">
+  <component name="RunManager" selected="应用程序.DB_Connector">
+    <configuration name="DB_Connector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.DB_Connector" />
+      <module name="cashbook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="cashbook" />
@@ -153,10 +193,12 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat 服务器.Tomcat 11.0.0-M1" />
+      <item itemvalue="应用程序.DB_Connector" />
       <item itemvalue="应用程序.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.DB_Connector" />
         <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
@@ -171,7 +213,7 @@
       <updated>1670769154609</updated>
       <workItem from="1670769157215" duration="1463000" />
       <workItem from="1670770904219" duration="1733000" />
-      <workItem from="1670842911691" duration="14351000" />
+      <workItem from="1670842911691" duration="40816000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1670770203819</created>
@@ -243,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671028636817</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="able to read input from the web">
+      <created>1671029432610</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671029432610</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
