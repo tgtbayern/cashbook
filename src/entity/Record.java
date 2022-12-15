@@ -20,6 +20,13 @@ public class Record {
         this.type=type;
         this.date=date;
     }
+    public Record(Date date,double amount,String type,String category){
+        this.amount=amount;
+        this.category= Category.valueOf(category);
+        this.type= Type.valueOf(type);
+        this.date=date;
+    }
+
 
     public Category getCategory() {
         return category;
@@ -51,5 +58,10 @@ public class Record {
 
     public void setType(Type type) {
         this.type = type;
+    }
+
+    public String toString(){
+        String str=("date:"+ date+" amount:"+amount+" category:"+category+" type:"+type);
+        return str;
     }
 }

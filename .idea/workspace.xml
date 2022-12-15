@@ -6,11 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0dde23c-b50a-4c54-935c-df2d709b600e" name="变更" comment="successfully connect to DB">
-      <change afterPath="$PROJECT_DIR$/src/DAO/DAO_impl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/untity/Record.java" afterDir="false" />
+    <list default="true" id="e0dde23c-b50a-4c54-935c-df2d709b600e" name="变更" comment="entity class">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/DB_Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/DB_Connector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/DAO_impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/DAO_impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Record.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,7 @@
       <recent name="C:\Users\86136\IdeaProjects\cashbook\web" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.DB_Connector">
+  <component name="RunManager" selected="应用程序.driver">
     <configuration name="DB_Connector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.DB_Connector" />
       <module name="cashbook" />
@@ -88,6 +88,13 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="cashbook" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="driver" />
       <module name="cashbook" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,9 +194,11 @@
       <item itemvalue="Tomcat 服务器.Tomcat 11.0.0-M1" />
       <item itemvalue="应用程序.DB_Connector" />
       <item itemvalue="应用程序.Main" />
+      <item itemvalue="应用程序.driver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.driver" />
         <item itemvalue="应用程序.DB_Connector" />
         <item itemvalue="应用程序.Main" />
       </list>
@@ -205,7 +214,7 @@
       <updated>1670769154609</updated>
       <workItem from="1670769157215" duration="1463000" />
       <workItem from="1670770904219" duration="1733000" />
-      <workItem from="1670842911691" duration="43340000" />
+      <workItem from="1670842911691" duration="58278000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1670770203819</created>
@@ -291,7 +300,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671127836819</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="entity class">
+      <created>1671130379693</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1671130379693</updated>
+    </task>
+    <task id="LOCAL-00014" summary="entity class">
+      <created>1671130410478</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671130410478</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +348,7 @@
     <MESSAGE value="add sevelet" />
     <MESSAGE value="able to read input from the web" />
     <MESSAGE value="successfully connect to DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="successfully connect to DB" />
+    <MESSAGE value="entity class" />
+    <option name="LAST_COMMIT_MESSAGE" value="entity class" />
   </component>
 </project>
