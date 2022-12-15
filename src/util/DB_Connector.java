@@ -4,7 +4,7 @@ import java.sql.DriverManager;
 
 /**
  * 封装一个对数据库的连接
- * @getCon（）方法返回一个对数据库的连接，后续对这个连接
+ * @getCon（）方法返回一个对数据库的连接，后续对这个连接可以执行语句
  */
 public class DB_Connector {
     private static String cname = "com.mysql.cj.jdbc.Driver";
