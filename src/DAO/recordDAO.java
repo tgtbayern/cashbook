@@ -7,14 +7,13 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedList;
 
-public class DAO_impl {
-    public int add(Record record) {
-        // 定义影响行数
-        int i = 0;
+public class recordDAO {
+    public ArrayList<Record> add(Record record) throws SQLException {
+        ResultSet rs = null;
         // 定义连接为null
-        Connection con = null;
+        Connection con;
         // 定义执行对象为null
-        PreparedStatement ps = null;
+        PreparedStatement ps;
         try {
         // 执行连接
             con = DB_Connector.getCon();
@@ -24,25 +23,22 @@ public class DAO_impl {
             ps.setDouble(2, record.getAmount());
             ps.setString(3, String.valueOf(record.getType()));
             ps.setString(4, String.valueOf(record.getCategory()));
-
-
-        // 计算影响行数
-            i = ps.executeUpdate();
+            ps.executeUpdate();
+            rs=ps.executeQuery("select * from ledger");
         } catch (Exception e) {
         // TODO: handle exception
         // 处理异常
             e.printStackTrace();
         }
-        // 返回影响行数
-        return i;
+        // 返回
+        return res(rs);
     }
-    public int delete(Record record) {
-        // 定义影响行数
-        int i = 0;
+    public ArrayList<Record> delete(Record record) throws SQLException {
+        ResultSet rs = null;
         // 定义连接为null
-        Connection con = null;
+        Connection con;
         // 定义执行对象为null
-        PreparedStatement ps = null;
+        PreparedStatement ps=null;
         try {
             // 执行连接
             con = DB_Connector.getCon();
@@ -55,34 +51,32 @@ public class DAO_impl {
                     "' and category='"+
                     record.getCategory()+
                     "';");
-//            System.out.println("in delete we have"+
-//                    "delete from ledger where time='"+
-//                    record.getDate()+
-//                    "' and amount="+
-//                    record.getAmount()+
-//                    " and type='"+record.getType()+
-//                    "' and category='"+
-//                    record.getCategory()+
-//                    "';");
+            ps.executeUpdate();
+            rs= ps.executeQuery("select * from ledger");
+            System.out.println("in delete we have"+
+                    "delete from ledger where time='"+
+                    record.getDate()+
+                    "' and amount="+
+                    record.getAmount()+
+                    " and type='"+record.getType()+
+                    "' and category='"+
+                    record.getCategory()+
+                    "';");
 
-            // 计算影响行数
-            i = ps.executeUpdate();
         } catch (Exception e) {
             // TODO: handle exception
             // 处理异常
             e.printStackTrace();
         }
-        // 返回影响行数
-        return i;
+        return res(rs);
     }
-    public int update(Record oldRecord,Record newRecord) {
+    public ArrayList<Record> update(Record oldRecord,Record newRecord) throws SQLException {
         delete(oldRecord);
         return add(newRecord);
     }
 
     public ArrayList<Record> search(Date start, Date end, double min, double max,
                                      Record.Type type,Record.Category category) throws SQLException {
-        ArrayList<Record> list=new ArrayList<Record>();
         //最早的日期
         java.sql.Date date1=new java.sql.Date(0);
         //最晚的日期（util中的date）
@@ -170,6 +164,10 @@ public class DAO_impl {
             // 处理异常
             e.printStackTrace();
         }
+        return res(rs);
+    }
+    public ArrayList<Record> res(ResultSet rs) throws SQLException {
+        ArrayList<Record> list=new ArrayList<Record>();
         while (rs.next()){
             java.sql.Date sDate=rs.getDate("time");
             Date uDate=sDate;
@@ -181,5 +179,4 @@ public class DAO_impl {
         }
         return list;
     }
-
 }

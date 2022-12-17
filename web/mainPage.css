@@ -1,0 +1,188 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+  }
+
+h1 {
+  color: #00a8ff;
+  text-align: center;
+}
+
+/* 表格数据板块 */
+table {
+  margin: auto;
+  border: 1px solid #00a8ff;
+  border-collapse: collapse;
+  width: 1000px;
+}
+
+th,
+td {
+  padding: 20px 8px;
+  width: 20%;
+  border: 1px solid #00a8ff;
+}
+
+th {
+  background-color: #00a8ff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* 筛选板块 */
+.choose {
+  /* text-align: center; */
+  margin: auto;
+}
+
+.choose input[type="submit"] {
+  background-color: #00a8ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* float: left; */
+}
+
+.choose label {
+  font-size: 18px;
+}
+
+.choose .choosebox {
+  padding: 0px 30px;
+
+}
+
+.choose input[type="date"] {
+  height: 35px;
+  width: 150px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 20px;
+  background: none;
+  border-radius: 4px;
+  border: 2px solid rgba(180, 180, 180);
+}
+
+.choose select {
+  height: 35px;
+  width: 150px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 20px;
+  background: none;
+  border-radius: 4px;
+  border: 2px solid rgba(180, 180, 180);
+}
+
+/* 增加板块 */
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.add-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 360px;
+  padding: 30px;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.add-box select {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.add-box .input-box {
+
+  width: 100%;
+  overflow: hidden;
+  border: none;
+  padding: 10px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #aaa;
+}
+
+.add-box .input-box input {
+  border: none;
+  outline: none;
+  background: none;
+  color: #000;
+  font-size: 18px;
+  width: 90%;
+  float: left;
+  margin: 0 10px;
+}
+
+.add-box input[type="submit"] {
+  background-color: #00a8ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.option {
+  text-align: center;
+}
+
+.option input[type="submit"] {
+  background-color: #00a8ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2e5a92;
+  color: #e6f0f5;
+}
+
+#closeBtn{
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #00a8ff;
+  cursor: pointer;
+}
+
+.btn{
+  display:inline;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #00a8ff;
+  cursor: pointer;
+}
+
+.closeBtn{
+  float:left;
+}
+
+.confirmBtn{
+  float:right;
+}

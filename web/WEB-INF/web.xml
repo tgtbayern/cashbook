@@ -4,18 +4,63 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <servlet>
-        <servlet-name>Servlet</servlet-name>
-        <servlet-class>controller.Servlet</servlet-class>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>controller.loginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Servlet</servlet-name>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>mainPageServletSearch</servlet-name>
+        <servlet-class>controller.mainPageServletSearch</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mainPageServletSearch</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>mainPageServletAdd</servlet-name>
+        <servlet-class>controller.mainPageServletAdd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mainPageServletAdd</servlet-name>
         <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>mainPageServletDelete</servlet-name>
+        <servlet-class>controller.mainPageServletDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mainPageServletDelete</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>mainPageServletUpdate</servlet-name>
+        <servlet-class>controller.mainPageServletUpdate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mainPageServletUpdate</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>signupServletAdd</servlet-name>
+        <servlet-class>controller.signupServletAdd</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signupServletAdd</servlet-name>
+        <url-pattern>/signupAdd</url-pattern>
     </servlet-mapping>
     <!--
     1 在html文件里，用户发送了一个add类型的请求（action=add）
     2 web.xml接受（12行<url-pattern>=add）
     3 <url-pattern>是<servlet-mapping>下的，找<servlet-mapping>下的<servlet-name>=Sevelet
-    4 通过这个Sevelet匹配<servlet>（第6行）中的<servlet-name>，发现匹配上了
+    4 通过这个Servlet匹配<servlet>（第6行）中的<servlet-name>，发现匹配上了
     5 找<servlet>（第6行）中的<servlet-class>class名称
     6 通过这个class名称找到用户发送请求的时候，应该执行的操作所在的类，执行相应操作
     7.同一个url可能发送不同的请求，servlet可以读取，进而做出不同的操作

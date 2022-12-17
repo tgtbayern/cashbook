@@ -6,11 +6,25 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0dde23c-b50a-4c54-935c-df2d709b600e" name="变更" comment="entity class">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="e0dde23c-b50a-4c54-935c-df2d709b600e" name="变更" comment="dao implements">
+      <change afterPath="$PROJECT_DIR$/src/DAO/userDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/mainPageServletAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/mainPageServletDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/mainPageServletSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/mainPageServletUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/signupServletAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mainPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mainPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/mainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/DAO_impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/DAO_impl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cashbook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cashbook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/DAO_impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/recordDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/loginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main_page.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,25 +58,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/86136/mysql-connector-j-8.0.31JDBC/mysql-connector-j-8.0.31.jar",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "库",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/86136/IdeaProjects/cashbook/web&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\86136\IdeaProjects\cashbook\web" />
@@ -72,7 +86,7 @@
       <recent name="C:\Users\86136\IdeaProjects\cashbook\web" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.driver">
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 11.0.0-M1">
     <configuration name="DB_Connector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.DB_Connector" />
       <module name="cashbook" />
@@ -101,7 +115,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 11.0.0-M1" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.0-M1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/cashbook/login.html" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/cashbook/mainPage.html" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
@@ -214,7 +228,8 @@
       <updated>1670769154609</updated>
       <workItem from="1670769157215" duration="1463000" />
       <workItem from="1670770904219" duration="1733000" />
-      <workItem from="1670842911691" duration="58278000" />
+      <workItem from="1670842911691" duration="91122000" />
+      <workItem from="1671248895005" duration="2590000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1670770203819</created>
@@ -314,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671130410478</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="dao implements">
+      <created>1671145413623</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1671145413623</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,6 +371,7 @@
     <MESSAGE value="able to read input from the web" />
     <MESSAGE value="successfully connect to DB" />
     <MESSAGE value="entity class" />
-    <option name="LAST_COMMIT_MESSAGE" value="entity class" />
+    <MESSAGE value="dao implements" />
+    <option name="LAST_COMMIT_MESSAGE" value="dao implements" />
   </component>
 </project>
