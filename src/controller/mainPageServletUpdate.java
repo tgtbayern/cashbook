@@ -3,6 +3,7 @@ package controller;
 import DAO.recordDAO;
 import entity.Record;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -12,6 +13,7 @@ import java.sql.Date;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+@WebServlet("/update")
 public class mainPageServletUpdate extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request,response);
@@ -34,7 +36,7 @@ public class mainPageServletUpdate extends HttpServlet {
         double amount2= Double.parseDouble(request.getParameter("amount2"));
         Record.Type type2= Record.Type.valueOf(request.getParameter("type2"));
         Record.Category category2= Record.Category.valueOf(request.getParameter("category2"));
-        Record newRecord=new Record(date1,amount1,type1,category1);
+        Record newRecord=new Record(date2,amount2,type2,category2);
         //执行search方法
         try {
             list=dao.update(oldRecord,newRecord);
@@ -42,7 +44,7 @@ public class mainPageServletUpdate extends HttpServlet {
             throw new RuntimeException(e);
         }
         //把数据封装在arraylist中发送回html
-        request.getSession().setAttribute("result", list);
+        request.getSession().setAttribute("result4", list);
         for (Record item:list
         ) {
             System.out.println(item);

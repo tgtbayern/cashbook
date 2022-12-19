@@ -1,5 +1,7 @@
 package entity;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Record {
@@ -9,18 +11,18 @@ public class Record {
     public enum Category {
         medical, education, dining, daily, entertainment, other
     }
-    private Date date;
+    private java.sql.Date date;
     private double amount;
     private Type type;
     private Category category;
 
-    public Record(Date date,double amount,Type type,Category category){
+    public Record(java.sql.Date date,double amount,Type type,Category category){
         this.amount=amount;
         this.category=category;
         this.type=type;
         this.date=date;
     }
-    public Record(Date date,double amount,String type,String category){
+    public Record(java.sql.Date date,double amount,String type,String category){
         this.amount=amount;
         this.category= Category.valueOf(category);
         this.type= Type.valueOf(type);
@@ -32,7 +34,7 @@ public class Record {
         return category;
     }
 
-    public Date getDate() {
+    public java.sql.Date getDate() {
         return date;
     }
 
@@ -53,7 +55,7 @@ public class Record {
     }
 
     public void setDate(Date date) {
-        this.date = date;
+        this.date = (java.sql.Date) date;
     }
 
     public void setType(Type type) {

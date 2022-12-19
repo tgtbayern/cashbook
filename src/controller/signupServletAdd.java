@@ -1,19 +1,18 @@
 package controller;
 
-import DAO.recordDAO;
 import DAO.userDAO;
 import entity.Record;
 import entity.User;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.sql.Date;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
+@WebServlet("/signUpAdd")
 public class signupServletAdd extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request,response);
@@ -30,10 +29,12 @@ public class signupServletAdd extends HttpServlet {
         User user=new User(username,password);
         //执行search方法
         try {
-            if(!dao.isSearch(user)){
+            if(!dao.isSearch(username)){
+                //用户的数据没问题
                 dao.add(user);
                 request.getSession().setAttribute("message", "add successfully");
             }else{
+                //用户的数据有问题
                 request.getSession().setAttribute("message", "same username!");
             }
         } catch (SQLException e) {

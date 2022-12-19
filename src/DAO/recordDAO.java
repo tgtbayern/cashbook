@@ -19,7 +19,7 @@ public class recordDAO {
             con = DB_Connector.getCon();
         // 执行sql语句
             ps = con.prepareStatement("insert into ledger(time,amount,type,category) values (?,?,?,?)");
-            ps.setDate(1, (java.sql.Date) record.getDate());
+            ps.setDate(1,record.getDate());
             ps.setDouble(2, record.getAmount());
             ps.setString(3, String.valueOf(record.getType()));
             ps.setString(4, String.valueOf(record.getCategory()));
@@ -93,7 +93,7 @@ public class recordDAO {
         try {
             // 执行连接
             con = DB_Connector.getCon();
-            // 执行sql语句
+             //执行sql语句
             if(start==null)
                 start=date1;
             if(end==null)
@@ -168,13 +168,14 @@ public class recordDAO {
     }
     public ArrayList<Record> res(ResultSet rs) throws SQLException {
         ArrayList<Record> list=new ArrayList<Record>();
+        if(rs==null)
+            return null;
         while (rs.next()){
             java.sql.Date sDate=rs.getDate("time");
-            Date uDate=sDate;
             double amount=rs.getDouble("amount");
             String sType=rs.getString("type");
             String sCategory=rs.getString("category");
-            Record record=new Record(uDate,amount,sType,sCategory);
+            Record record=new Record(sDate,amount,sType,sCategory);
             list.add(record);
         }
         return list;

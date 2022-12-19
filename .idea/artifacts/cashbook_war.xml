@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cashbook:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/cashbook_war</output-path>
+    <root id="archive" name="cashbook_war.war">
+      <element id="artifact" artifact-name="cashbook:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="echarts" />
+          <element id="artifact" artifact-name="cashbook:war exploded" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

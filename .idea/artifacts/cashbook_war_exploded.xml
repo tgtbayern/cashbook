@@ -2,15 +2,16 @@
   <artifact type="exploded-war" name="cashbook:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/cashbook_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="cashbook/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="cashbook" />
+          <element id="library" level="application" name="echarts" />
         </element>
         <element id="directory" name="lib">
-          <element id="file-copy" path="$PROJECT_DIR$/lib/mysql-connector-j-8.0.31.jar" />
+          <element id="file-copy" path="$USER_HOME$/mysql-connector-j-8.0.31JDBC/mysql-connector-j-8.0.31.jar" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="cashbook/web/Web" />
     </root>
   </artifact>
 </component>

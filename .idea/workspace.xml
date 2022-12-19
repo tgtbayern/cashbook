@@ -2,29 +2,31 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="cashbook:war" />
       <artifact name="cashbook:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0dde23c-b50a-4c54-935c-df2d709b600e" name="变更" comment="dao implements">
-      <change afterPath="$PROJECT_DIR$/src/DAO/userDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/mainPageServletAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/mainPageServletDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/mainPageServletSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/mainPageServletUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/signupServletAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/mainPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/mainPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/mainPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/cashbook_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jsp_api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/cashbook_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/cashbook_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cashbook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cashbook.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAO/DAO_impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/recordDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/loginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/recordDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/recordDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAO/userDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/userDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/loginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/loginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/mainPageServletAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/mainPageServletAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/mainPageServletDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/mainPageServletDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/mainPageServletSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/mainPageServletSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/mainPageServletUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/mainPageServletUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/signupServletAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/signupServletAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Record.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/main_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/mainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/signUp.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -58,25 +60,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/86136/IdeaProjects/cashbook/web&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "openjdk-15",
+    "last_opened_file_path": "C:/Users/86136/IdeaProjects/cashbook/web",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "库",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\86136\IdeaProjects\cashbook\web" />
@@ -86,7 +90,7 @@
       <recent name="C:\Users\86136\IdeaProjects\cashbook\web" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat 服务器.Tomcat 11.0.0-M1">
+  <component name="RunManager" selected="应用程序.driver">
     <configuration name="DB_Connector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.DB_Connector" />
       <module name="cashbook" />
@@ -114,15 +118,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/cashbook/web/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 11.0.0-M1" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.0-M1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/cashbook/mainPage.html" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/cashbook/signUp.html" />
+      <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="cashbook:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/cashbook" />
+          </settings>
+        </artifact>
+        <artifact name="cashbook:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/cashbook_war" />
           </settings>
         </artifact>
       </deployment>
@@ -201,10 +212,12 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="cashbook:war exploded" />
+          <artifact name="cashbook:war" />
         </option>
       </method>
     </configuration>
     <list>
+      <item itemvalue="JavaScript 调试.login.html" />
       <item itemvalue="Tomcat 服务器.Tomcat 11.0.0-M1" />
       <item itemvalue="应用程序.DB_Connector" />
       <item itemvalue="应用程序.Main" />
@@ -213,6 +226,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.driver" />
+        <item itemvalue="JavaScript 调试.login.html" />
         <item itemvalue="应用程序.DB_Connector" />
         <item itemvalue="应用程序.Main" />
       </list>
@@ -229,7 +243,10 @@
       <workItem from="1670769157215" duration="1463000" />
       <workItem from="1670770904219" duration="1733000" />
       <workItem from="1670842911691" duration="91122000" />
-      <workItem from="1671248895005" duration="2590000" />
+      <workItem from="1671248895005" duration="14808000" />
+      <workItem from="1671275552627" duration="2899000" />
+      <workItem from="1671281524391" duration="2452000" />
+      <workItem from="1671351925191" duration="19896000" />
     </task>
     <task id="LOCAL-00001" summary="try">
       <created>1670770203819</created>
@@ -336,7 +353,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671145413623</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="dao implements">
+      <created>1671260093711</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1671260093711</updated>
+    </task>
+    <task id="LOCAL-00017" summary="dao implements">
+      <created>1671260127905</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1671260127905</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,5 +404,8 @@
     <MESSAGE value="entity class" />
     <MESSAGE value="dao implements" />
     <option name="LAST_COMMIT_MESSAGE" value="dao implements" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cashbook$Tomcat_11_0_0_M1.ic" NAME="Tomcat 11.0.0-M1 覆盖结果" MODIFIED="1671356537999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

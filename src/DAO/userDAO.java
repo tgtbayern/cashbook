@@ -28,7 +28,7 @@ public class userDAO {
         }
     }
 
-    public boolean isSearch(User user) throws SQLException {
+    public boolean isSearch(String username) throws SQLException {
         String str;
         ResultSet rs = null;
         // 定义连接为null
@@ -36,7 +36,32 @@ public class userDAO {
         // 定义执行对象为null
         PreparedStatement ps;
         try {
-            str="select * from user where username="+user.getUsername()+";";
+            str="select * from user where username='"+username+"';";
+            System.out.println(str);
+            // 执行连接
+            con = DB_Connector.getCon();
+            // 执行sql语句
+            Statement statement=con.createStatement();
+            rs=statement.executeQuery(str);
+        } catch (Exception e) {
+            // TODO: handle exception
+            // 处理异常
+            e.printStackTrace();
+        }
+        // 返回更新后的数据库是否有内容
+        return rs.next();
+    }
+
+    public boolean isSearch(String username,String password) throws SQLException {
+        String str;
+        ResultSet rs = null;
+        // 定义连接为null
+        Connection con;
+        // 定义执行对象为null
+        PreparedStatement ps;
+        try {
+            str="select * from user where username='"+username+"' and password='"+password+"';";
+            System.out.println(str);
             // 执行连接
             con = DB_Connector.getCon();
             // 执行sql语句

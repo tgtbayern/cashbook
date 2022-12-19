@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>注册</title>
+  <title>系统登录</title>
   <style>
     /* 定义页面的样式 */
     body {
@@ -66,12 +66,13 @@
       color: #666;
     }
   </style>
+  <!--    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
 </head>
 <body>
 <div class="login-box">
-  <h1>注册</h1>
+  <h1>系统登录</h1>
 
-  <form action="add" method="post">
+  <form action="signUpAdd" method="post">
     <div class="textbox">
       <!--
       placeholder表示预设值
@@ -79,12 +80,12 @@
       <input type="text" placeholder="用户名" name="username">
     </div>
     <div class="textbox">
-      <input type="password" placeholder="密码" name="password1">
+      <input type="password" placeholder="密码" name="password">
     </div>
     <div class="textbox">
-      <input type="password" placeholder="确认密码" name="password2">
+      <input type="password" placeholder="确认密码" name="confirm">
     </div>
-    <input class="btn" type="submit" value="注册" ><br><br>
+    <input class="btn" type="submit" value="注册" >
 
   </form>
 </div>
@@ -93,18 +94,17 @@
   document.querySelector('.btn').addEventListener('click', function() {
     // 获取用户输入的用户名和密码
     var username = document.querySelector('.textbox input[type="text"]').value;
-    var password1 = document.querySelector('.textbox input[name="password1"]').value;
-    var password2 = document.querySelector('.textbox input[name="password2"]').value;
-
+    var password = document.querySelector('.textbox input[type="password"]').value;
     // 进行用户名和密码的验证
-    if (username === '' || password1 === '') {
+    if (username === '' || password === '') {
       alert('用户名或密码不能为空！');
-    }else if(password1!==password2){
-      alert('密码不匹配');
-    }
-    else{
+    } else {
+
+
       alert('注册成功！');
     }
+
+
   });
 </script>
 </body>

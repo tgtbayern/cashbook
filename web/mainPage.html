@@ -2,107 +2,108 @@
 <html>
 
 <head>
-  <title>账目管理系统</title>
-  <meta charset="utf-8">
-  <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
-  <link rel="stylesheet" href="./mainPage.css">
+    <title>账目管理系统</title>
+    <meta charset="utf-8">
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    <link rel="stylesheet" href="./mainPage.css">
 </head>
 
 <body>
-  <div>
+<div>
     <h1>账目管理系统</h1>
     <!-- 图表板块... -->
     <div class="chart" style="display: flex;justify-content: center;">
-      <div id="main" style="width: 500px;height:400px;display:inline;float:left;"></div>
-      <div id="mainLine" style="width: 500px;height:400px;display:inline;float:left;"></div>
-      <div id="mainPie" style="width: 400px;height:400px;display:inline;float:left;"></div>
+        <div id="main" style="width: 500px;height:400px;display:inline;float:left;"></div>
+        <div id="mainLine" style="width: 500px;height:400px;display:inline;float:left;"></div>
+        <div id="mainPie" style="width: 400px;height:400px;display:inline;float:left;"></div>
     </div> <br />
     <!-- 表格数据板块... -->
     <table></table>
-  </div>
-  <br /><br /><br />
+</div>
+<br /><br /><br />
 
-  <!-- 筛选板块 -->
-  <div class="choose" style="display: flex;justify-content: center;">
-  <form action="/search" method="post">
+<!--新增-->
+<div class="addBtn" style="display:inline;float:left">
+    <input type="submit" name="popBoxAdd" value="新增">
+</div>
+<!-- 筛选板块 -->
+<div class="choose" style="display: flex;justify-content: center;">
+    <form action="/search" method="post">
 
-    <!--新增-->
-    <div class="addBtn" style="display:inline;float:left">
-      <input type="submit" name="popBoxAdd" value="新增">
-    </div>
 
-    <div class="choosebox" style="display:inline;float:left">
-      <label for="timeChoose">日期筛选：</label>
-      <input type="date" id="starttime" name="start">&nbsp&nbsp-&nbsp&nbsp
-      <input type="date" id="endtime" name="end">
-    </div>
 
-    <div class="choosebox" style="display:inline;float:left">
-      <label for="typeChoose">类型筛选：</label>
-      <select class="filterType" name="type" placeholder="用户名">
-        <option value="payment">支出</option>
-        <option value="income">收入</option>
-      </select>
-    </div>
+        <div class="choosebox" style="display:inline;float:left">
+            <label for="timeChoose">日期筛选：</label>
+            <input type="date" id="starttime" name="start">&nbsp&nbsp-&nbsp&nbsp
+            <input type="date" id="endtime" name="end">
+        </div>
 
-    <div class="choosebox" style="display:inline;float:left">
-      <label for="purposeChoose">分类筛选：</label>
-      <select class="filterPurpose" name="purpose">
-        <option value="medical">医疗</option>
-        <option value="education">教育</option>
-        <option value="dining">餐饮</option>
-        <option value="daily">娱乐</option>
-        <option value="entertainment">日常</option>
-        <option value="other">其他</option>
-      </select>
-    </div>
-<--???????-->
-    <div class="btn filterBtn" style="float:left">筛选</div>
-  </form>
-  </div>
-  <br /><br />
+        <div class="choosebox" style="display:inline;float:left">
+            <label for="typeChoose">类型筛选：</label>
+            <select class="filterType" name="type" placeholder="用户名">
+                <option value="payment">支出</option>
+                <option value="income">收入</option>
+            </select>
+        </div>
 
-  <!-- 增加板块... -->
-  <div class="modal">
+        <div class="choosebox" style="display:inline;float:left">
+            <label for="purposeChoose">分类筛选：</label>
+            <select class="filterPurpose" name="purpose">
+                <option value="medical">医疗</option>
+                <option value="education">教育</option>
+                <option value="dining">餐饮</option>
+                <option value="daily">娱乐</option>
+                <option value="entertainment">日常</option>
+                <option value="other">其他</option>
+            </select>
+        </div>
+
+        <div class="btn filterBtn" style="float:left">筛选</div>
+    </form>
+</div>
+<br /><br />
+
+<!-- 增加板块... -->
+<div class="modal">
     <div class="add-box" id="add-box">
-      <h2>增加一笔：</h2><br />
-      <form id="addForm" action="add" method ="post" >
-        <div class="input-box">
-          <!-- 日期 -->
-          <input type="date" id="time" name="date">
-        </div>
+        <h2>增加一笔：</h2><br />
+        <form id="addForm" action="add" method ="post" >
+            <div class="input-box">
+                <!-- 日期 -->
+                <input type="date" id="time" name="date">
+            </div>
 
-        <div class="input-box">
-          <!-- 金额 -->
-          <input type="number" id="amount" name="amount" step="0.01" min="0" placeholder="金额">
-        </div>
+            <div class="input-box">
+                <!-- 金额 -->
+                <input type="number" id="amount" name="amount" step="0.01" min="0" placeholder="金额">
+            </div>
 
-        <!-- 类型 -->
-        <div class="input-box">
-          <select id="type" name="type" placeholder="用户名">
-            <option value="payment">支出</option>
-            <option value="income">收入</option>
-          </select>
-        </div>
-        <!-- 分类 -->
-        <div class="input-box">
-          <select id="purpose" name="category">
-            <option value="medical">医疗</option>
-            <option value="education">教育</option>
-            <option value="dining">餐饮</option>
-            <option value="daily">娱乐</option>
-            <option value="entertainment">日常</option>
-            <option value="other">其他</option>
-          </select>
-        </div>
-        <br />
-        <!-- 增加中的关闭和确认按键 -->
-        <div class="btn closeBtn" style="display:inline;float:left;">关 闭</div>
-        <div class="btn confirmBtn" type=submit style="display:inline;float:right;">确 认</div>
-        <br /><br /><br />
-      </form>
+            <!-- 类型 -->
+            <div class="input-box">
+                <select id="type" name="type" placeholder="用户名">
+                    <option value="payment">支出</option>
+                    <option value="income">收入</option>
+                </select>
+            </div>
+            <!-- 分类 -->
+            <div class="input-box">
+                <select id="purpose" name="category">
+                    <option value="medical">医疗</option>
+                    <option value="education">教育</option>
+                    <option value="dining">餐饮</option>
+                    <option value="daily">娱乐</option>
+                    <option value="entertainment">日常</option>
+                    <option value="other">其他</option>
+                </select>
+            </div>
+            <br />
+            <!-- 增加中的关闭和确认按键 -->
+            <div class="btn closeBtn" style="display:inline;float:left;">关 闭</div>
+            <div class="btn confirmBtn" type=submit style="display:inline;float:right;">确 认</div>
+            <br /><br /><br />
+        </form>
     </div>
-  </div>
+</div>
 </body>
 <script src="./mainPage.js"></script>
 

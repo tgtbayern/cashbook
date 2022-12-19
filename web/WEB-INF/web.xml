@@ -3,59 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <servlet>
-        <servlet-name>loginServlet</servlet-name>
-        <servlet-class>controller.loginServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>loginServlet</servlet-name>
-        <url-pattern>/login</url-pattern>
-    </servlet-mapping>
 
-    <servlet>
-        <servlet-name>mainPageServletSearch</servlet-name>
-        <servlet-class>controller.mainPageServletSearch</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>mainPageServletSearch</servlet-name>
-        <url-pattern>/search</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>mainPageServletAdd</servlet-name>
-        <servlet-class>controller.mainPageServletAdd</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>mainPageServletAdd</servlet-name>
-        <url-pattern>/add</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>mainPageServletDelete</servlet-name>
-        <servlet-class>controller.mainPageServletDelete</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>mainPageServletDelete</servlet-name>
-        <url-pattern>/delete</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>mainPageServletUpdate</servlet-name>
-        <servlet-class>controller.mainPageServletUpdate</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>mainPageServletUpdate</servlet-name>
-        <url-pattern>/update</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>signupServletAdd</servlet-name>
-        <servlet-class>controller.signupServletAdd</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>signupServletAdd</servlet-name>
-        <url-pattern>/signupAdd</url-pattern>
-    </servlet-mapping>
     <!--
     1 在html文件里，用户发送了一个add类型的请求（action=add）
     2 web.xml接受（12行<url-pattern>=add）
